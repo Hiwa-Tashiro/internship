@@ -1,0 +1,43 @@
+{
+  "api": {
+    "interntest1108": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "internship14262b09e111"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "internship14262b09e111": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_internship14262b09e111_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "internship14262b09e111"
+        }
+      ]
+    },
+    "AMPLIFY_function_internship14262b09e111_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "internship14262b09e111"
+        }
+      ]
+    }
+  }
+}
